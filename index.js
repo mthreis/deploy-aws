@@ -2,6 +2,10 @@ const express = require("express");
 
 const app = express();
 
+app.get("/users", (req, res) => {
+    res.status(200).json({ message: "ok. users!" });
+});
+
 app.get("/products", (req, res) => {
     res.status(200).json({ message: "ok. products!" });
 });
